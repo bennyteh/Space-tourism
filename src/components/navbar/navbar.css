@@ -50,7 +50,7 @@
 .space__navbar_container p span {
     color: var(--color-white);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     font-family: var(--font-family-sub);
     padding-right: 0.5rem;
 }
@@ -79,15 +79,18 @@
 
 }
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 40rem) {
 
     .space__navbar {
         padding: 0;
     }
 
+    .space__navbar_logo img{
+        width: 40px;
+    }
+
     .space__navbar button{
         display: block;
-        background-image: url("../../assets/shared/icon-hamburger.svg");
         background-color: transparent;
         background-repeat: no-repeat;
         width: 1.5rem;
@@ -103,18 +106,42 @@
         position: fixed;
         z-index: 100;
         inset: 0 0 0 30%;
+        padding: min(30vh, 10rem) 2rem;
+        display: flex;
         align-items: flex-start;
         flex-direction: column;
-        padding: min(30vh, 10rem) 2rem;
-        transform: translateX(0%);
+        color: var(--color-white);
+        background-color: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        transform: translateX(100%);
+    }
+
+    @keyframes slide_in {
+        0% {transform: translateX(100%);}
+        100% {transform: translateX(0%);}
+    }
+
+    .space__navbar_container-mobile p {
+        padding: 1rem 0;
+        border: 2px solid transparent;
+    }
+    
+    .space__navbar_container-mobile p > a {
+        font-size: 16px;
+        font-family: var(--font-family-sub);
+        letter-spacing: 2.7px;
         color: var(--color-white);
     }
-
-    /* .space__navbar_container p {
-        padding: 0.5rem 0;
+    
+    .space__navbar_container-mobile p:hover{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.25);
     }
-
-    .space__navbar_container p a span{
-        display: inline;
-    } */
+    
+    .space__navbar_container-mobile p span {
+        color: var(--color-white);
+        font-weight: bold;
+        font-size: 16px;
+        font-family: var(--font-family-sub);
+        padding-right: 0.5rem;
+    }
 }

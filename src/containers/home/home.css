@@ -1,0 +1,64 @@
+.space__home {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.space__home_container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.space__home_container_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--color-white);
+}
+
+.space__home_container_description h3{
+    font-family: var(--font-family-sub);
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    line-height: 34px;
+    color: var(--color-lightblue);
+}
+
+.space__home_container_description h1{
+    font-family: var(--font-family);
+    font-size: 150px;
+    line-height: 172px;
+}
+
+.space__home_container_description p {
+    font-family: var(--font-family-sub);
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--color-lightblue);
+}
+
+.space__home__container_btn {
+    padding-top: 10rem;
+}
+
+.space__home__container_btn a {
+    position: relative;
+    display: block;
+    aspect-ratio: 1;
+    width: 274px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+}
+
+.space__home__container_btn a span {
+    position: absolute;
+    display:block;
+    inset: 118px 64px 118px 62px;
+    font-family: var(--font-family);
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: #0B0D17;
+    line-height: 36.67px;
+}

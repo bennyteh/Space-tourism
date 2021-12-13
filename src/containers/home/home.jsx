@@ -5,7 +5,6 @@ import {Navbar} from '../../components/components'
 const Home = () => {
     return (
         <div className='space__home' id="home">
-            <Navbar className="space__home__navbar"/>
             <div className='space__home_container'>
                 <header className='space__home_container_description'>
                     <h3>SO, YOU WANT TO TRAVEL TO</h3>

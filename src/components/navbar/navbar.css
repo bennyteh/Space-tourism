@@ -1,4 +1,6 @@
 .space__navbar {
+    position: absolute;
+    width: 100%;
     padding: 2.5rem 0 0 3.438rem;
     display: flex;
     align-items: center;

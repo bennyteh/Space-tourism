@@ -1,0 +1,121 @@
+.space__planet{
+    padding-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.space__planet__header {
+    display: flex;
+    gap: 1.1rem;
+}
+
+.space__planet__header h4 {
+    font-family: var(--font-family-sub);
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+}
+
+.header__opacity{
+    opacity: 0.25;
+}
+
+.space__planet__image{
+    padding-top: 2rem;
+}
+
+.space__planet__image img{
+    width: 170px;
+}
+
+.space__planet__button{
+    padding-top: 26px;
+    display: flex;
+    gap: 1.6rem;
+}
+
+.space__planet__button button{
+    text-decoration: none;
+    text-align: center;
+    padding: 0 0.1rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--color-lightblue);
+    font-family: var(--font-family-sub);
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+    border-bottom: 1px solid transparent;
+}
+
+.space__planet__button button:hover{
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.space__planet__button-focus{
+    border-bottom: 1px solid rgba(255,255,255);
+}
+
+.space__planet__button-focus:hover{
+    border-bottom: 1px solid rgba(255,255,255);
+}
+
+.space__planet__description{
+    padding: 1.25rem 1.5rem 0 1.5rem;
+    text-align: center;
+}
+
+.space__planet__description h2{
+    font-size: 56px;
+    line-height: 64px;
+    font-family: var(--font-family);
+    color: var(--color-white);
+}
+
+.space__planet__description p {
+    font-family: var(--font-family-text);
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--color-lightblue)
+}
+
+.space__planet__line {
+    border-bottom: 1px solid #383B4B;
+    width: 90%;
+    margin: 2rem 0;
+}
+
+.space__planet__details{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.space__planet__details-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.space__planet__distance_p--top{
+    font-family: var(--font-family-sub);
+    color: var(--color-lightblue);
+    text-align: center;
+    letter-spacing: 2.3625px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.space__planet__distance_p--bottom{
+    font-family: var(--font-family);
+    font-size: 28px;
+    line-height: 32px;
+    color: var(--color-white);
+    text-align: center;
+}

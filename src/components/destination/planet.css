@@ -34,13 +34,12 @@
 .space__planet__button{
     padding-top: 26px;
     display: flex;
-    gap: 1.6rem;
+    gap: 1.7rem;
 }
 
-.space__planet__button button{
+.space__planet__button-btn{
     text-decoration: none;
     text-align: center;
-    padding: 0 0.1rem;
     border: 0;
     background-color: transparent;
     cursor: pointer;
@@ -50,13 +49,17 @@
     line-height: 17px;
     letter-spacing: 2.3625px;
     border-bottom: 1px solid transparent;
+    height: 28px;
+    display: flex;
+    align-items: flex-start;
 }
 
-.space__planet__button button:hover{
+.space__planet__button-btn:hover{
     border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 
 .space__planet__button-focus{
+    color: var(--color-white);
     border-bottom: 1px solid rgba(255,255,255);
 }
 
@@ -118,4 +121,165 @@
     line-height: 32px;
     color: var(--color-white);
     text-align: center;
+}
+
+@media screen and (min-width: 640px){
+    .space__planet{
+        padding-top: 8.5rem;
+    }
+
+    .space__planet__header{
+        width: 100%;
+        padding-left: 2.4rem;
+    }
+
+    .space__planet__header h4{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+
+    .space__planet__image{
+        padding-top: 3.75rem;
+    }
+
+    .space__planet__image img{
+        width: 300px;
+    }
+
+    .space__planet__button{
+        padding-top: 3.3125rem;
+        gap: 2.188rem;
+    }
+
+    .space__planet__button-btn{
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        height: 34px;
+        border-bottom: 3px solid transparent;
+    }
+
+    .space__planet__button-btn:hover{
+        border-bottom: 3px solid rgba(255,255,255,0.5);
+    }
+
+    .space__planet__button-focus{
+        border-bottom: 3px solid white;
+    }
+
+    .space__planet__button-focus:hover{
+        border-bottom: 3px solid white;
+    }
+
+    .space__planet__description{
+        padding-top: 2rem;
+    }
+    
+    .space__planet__description h2{
+        font-size: 80px;
+        line-height: 92px;
+        font-family: var(--font-family);
+        color: var(--color-white);
+    }
+    
+    .space__planet__description p {
+        font-family: var(--font-family-text);
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 573px;
+    }
+
+    .space__planet__line{
+        margin-bottom: 0;
+    }
+    
+    .space__planet__details{
+        padding: 2rem 0;
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+}
+
+@media screen and (min-width: 1050px){
+    .space__planet{
+        display: grid;
+        grid-column-gap: 10rem;
+        grid-template: repeat(5, auto) / repeat(2, auto);      
+        padding: 0 4rem;
+        padding-top: 9rem;
+    }
+
+    .space__planet__header{
+        grid-column: 1;
+        justify-content: flex-start;
+        padding: 0;
+        gap: 1.75rem;
+    }
+
+    .space__planet__header h4{
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+    }
+
+    .space__planet__image{
+        grid-row-start: span 4;
+        grid-column-start: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .space__planet__image img{
+        width: 445px;
+    }
+
+    .space__planet__button{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        padding: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .space__planet__button-btn{
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+    }
+
+    .space__planet__description {
+        grid-row-start: 3;
+        grid-column-start: 2;
+        padding: 0;
+    }
+    
+    .space__planet__description h2{
+        text-align: left;
+        font-size: 100px;
+        line-height: 115px;
+    }
+
+    .space__planet__description p{
+        padding-top: 0.875rem;
+        text-align: left;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .space__planet__line{
+        width: 100%;
+        margin: 0;
+    }
+
+    .space__planet__details{
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .space__planet__details-flex{
+        align-items: flex-start;
+    }
 }

@@ -23,10 +23,10 @@ const Planet = () => {
                 <img src={image[planet.id]} alt={planet.name}></img>
             </figure>
             <div className='space__planet__button'>
-                <button className={(choosePlanet === "Moon"? "space__planet__button-focus" : "")} value="Moon" onClick={(e) => handleClick(e)}>MOON</button>
-                <button value="Mars" onClick={(e) => handleClick(e)}>MARS</button>
-                <button value="Europa" onClick={(e) => handleClick(e)}>EUROPA</button>
-                <button value="Titan" onClick={(e) => handleClick(e)}>TITAN</button>
+                <button className={(choosePlanet === "Moon"? "space__planet__button-btn space__planet__button-focus" : "space__planet__button-btn")} value="Moon" onClick={(e) => handleClick(e)}>MOON</button>
+                <button className={(choosePlanet === "Mars"? "space__planet__button-btn space__planet__button-focus" : "space__planet__button-btn")} value="Mars" onClick={(e) => handleClick(e)}>MARS</button>
+                <button className={(choosePlanet === "Europa"? "space__planet__button-btn space__planet__button-focus" : "space__planet__button-btn")} value="Europa" onClick={(e) => handleClick(e)}>EUROPA</button>
+                <button className={(choosePlanet === "Titan"? "space__planet__button-btn space__planet__button-focus" : "space__planet__button-btn")} value="Titan" onClick={(e) => handleClick(e)}>TITAN</button>
             </div>
             <div className='space__planet__description'>
                 <h2>{(planet.name).toLocaleUpperCase()}</h2>

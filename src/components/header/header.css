@@ -1,0 +1,44 @@
+.space__header {
+    display: flex;
+    gap: 1.1rem;
+}
+
+.space__header h4 {
+    font-family: var(--font-family-sub);
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+}
+
+.header__opacity{
+    opacity: 0.25;
+}
+
+@media screen and (min-width: 640px){
+    .space__header{
+        width: 100%;
+        padding-left: 2.4rem;
+    }
+
+    .space__header h4{
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .space__header{
+        /* grid-column: 1; */
+        /* justify-content: flex-start; */
+        padding: 0;
+        gap: 1.75rem;
+    }
+
+    .space__header h4{
+        font-size: 28px;
+        line-height: 34px;
+        letter-spacing: 4.725px;
+    }
+}

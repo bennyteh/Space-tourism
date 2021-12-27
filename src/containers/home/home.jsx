@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './home.css'
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
                 </header>
 
                 <div className='space__home__container_btn'>
-                    <a href="#destination"><span>EXPLORE</span></a>
+                    <Link to="/destination"><span>EXPLORE</span></Link>
                 </div>
             </div>
             

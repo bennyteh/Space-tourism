@@ -8,7 +8,6 @@ const Crew = () => {
     const [chooseCrew, setChooseCrew] = useState("Douglas Hurley")
     const dataCrew = data.crew.filter(crew => crew.name === chooseCrew)
     const crew = dataCrew[0]
-    console.log(crew)
 
     const handleClick = (e) => {
         setChooseCrew(e.target.value)

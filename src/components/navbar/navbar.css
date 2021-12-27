@@ -36,17 +36,19 @@
 .space__navbar_container p {
     padding: 1.5rem 0;
     border: 2px solid transparent;
-}
-
-.space__navbar_container p > a {
     font-size: 16px;
     font-family: var(--font-family-sub);
     letter-spacing: 2.7px;
     color: var(--color-white);
+    
 }
 
 .space__navbar_container p:hover{
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.focus{
+    border-bottom: 2px solid rgba(255, 255, 255);
 }
 
 .space__navbar_container p span {
@@ -75,7 +77,7 @@
         padding: 2rem 0;
     }
 
-    .space__navbar_container p a span{
+    .space__navbar_container p span{
         display: none;
     }
 
@@ -126,9 +128,6 @@
     .space__navbar_container-mobile p {
         padding: 1rem 0;
         border: 2px solid transparent;
-    }
-    
-    .space__navbar_container-mobile p > a {
         font-size: 16px;
         font-family: var(--font-family-sub);
         letter-spacing: 2.7px;

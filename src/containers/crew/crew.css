@@ -41,6 +41,7 @@ section{
 .space__crew__line {
     border-top: 1px solid #383B4B;
     width: 90%;
+    margin: 0 auto;
 }
 
 .space__crew__button{

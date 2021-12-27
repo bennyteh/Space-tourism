@@ -29,6 +29,11 @@
 
 .space__planet__image img{
     width: 170px;
+    animation: spin 50s infinite;
+}
+
+@keyframes spin {
+    100%{transform: rotate(360deg);}
 }
 
 .space__planet__button{

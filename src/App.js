@@ -2,15 +2,20 @@ import React from 'react';
 import "./app.css";
 import { Navbar } from './components/components';
 import {Home, Destination, Crew, Technology} from "./containers/container"
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       <Navbar />
-      {/* <Home /> */}
-      {/* <Destination/> */}
-      {/* <Crew /> */}
-      <Technology />
+      <main>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/destination' element={<Destination/>}/>
+          <Route path='/crew' element={<Crew />}/>
+          <Route path='/technology' element={<Technology />}/>
+        </Routes>
+      </main>
     </div>
   );
 }
